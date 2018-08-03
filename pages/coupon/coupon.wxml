@@ -1,0 +1,159 @@
+<!--pages/coupon/coupon.wxml-->
+<!--pages/order/order.wxml-->
+ <view class="n_co_top">
+  <block wx:for="{{selectlist}}" wx:key="item">
+    <view class="{{currentTabsIndex == index? 'selected':''}}" bindtap='select' data-index="{{index}}">
+        {{item.name}}
+    </view>
+  </block>
+</view>
+<!-- 未使用的优惠劵 -->
+<block wx:if='{{currentTabsIndex==0}}'>
+  <view class='all_con'>
+    <block wx:for='{{normal_coupon}}' wx:key='item'>
+          <view class="n_use_cou_list_has">
+              <view class="use_cou_list_has">
+                  <image src='../../img/coupon_list.png'></image>
+                  
+                  <view class="n_use_left" style="margin-top: 34rpx;">
+
+                        <view class="use_coupon_title" style="color:#a1a1a1;">
+                            {{item.name}}
+                        </view>
+
+                        <view class="use_time" style="color:#aeaeae;">
+                          <text>2018.01.27 - 2018.12.30</text>			
+                        </view>
+
+                  </view>
+
+                   <view class="n_use_right" style="margin-top:10px;">
+                          <view class="n_co_type" wx:if='{{item.coupon_type==1}}'>
+                            <text style='font-size:28rpx;'>￥</text>{{item.dis_price}}
+                          </view>
+                           <view class="n_co_type" wx:if='{{item.coupon_type==2}}'>
+                            {{item.dis_price}}<text style='font-size:28rpx;'>%</text>
+                          </view>
+                          <view class="n_co_type" wx:if='{{item.coupon_type==3}}'>
+                              免邮
+                          </view>
+                        <view class="price_type">
+                           立即使用
+                        </view>
+                  </view>
+              </view>
+
+          </view>
+      </block>
+    </view>      
+  </block>
+ 
+<!-- 已使用的优惠劵 -->
+<block wx:if='{{currentTabsIndex==1}}'>
+    <view class='all_con' wx:if="{{used_coupon}}">
+      <block wx:for='{{used_coupon}}' wx:key='item'>
+          <view class="n_use_cou_list_has">
+              <view class="use_cou_list_has">
+                  <image src='../../img/no_use_coupon.png'></image>
+                  
+                  <view class="n_use_left" style="margin-top: 34rpx;">
+
+                        <view class="use_coupon_title" style="color:#a1a1a1;">
+                            全场通用
+                        </view>
+
+                        <view class="use_time" style="color:#aeaeae;">
+                          <text>2018.01.27 - 2018.12.30</text>			
+                        </view>
+
+                  </view>
+
+                   <view class="n_use_right" style="margin-top:10px;">
+                         <view class="n_co_type">
+                          <text style='font-size:28rpx;'>￥</text>5
+                        </view>
+                        <view class="price_type">
+                           立即使用
+                        </view>
+                  </view>
+              </view>
+
+          </view>
+      </block>      
+    </view>
+
+      <view class="no_coupon_style" wx:if="{{used_coupon==''}}">
+					<view style="text-align: center;margin-bottom:30rpx;">
+						  <image src="../../img/no_anyone.png"></image>
+					</view>
+          <view style='text-align:center;font-size:30rpx;'>
+					    暂无相关订单
+          </view>
+	    </view>
+</block>
+
+<!-- 已支付的订单 -->
+<block wx:if='{{currentTabsIndex==2}}'>
+  <view class='all_con' wx:if='{{end_coupon}}'>
+    <block wx:for='{{end_coupon}}' wx:key='item'>
+          <view class="n_use_cou_list_has">
+              <view class="use_cou_list_has">
+                  <image src='../../img/no_use_coupon.png'></image>
+                  
+                  <view class="n_use_left" style="margin-top: 34rpx;">
+
+                        <view class="use_coupon_title" style="color:#a1a1a1;">
+                            {{item.name}}
+                        </view>
+
+                        <view class="use_time" style="color:#aeaeae;">
+                          <text>2018.01.27 - 2018.12.30</text>			
+                        </view>
+
+                  </view>
+
+                   <view class="n_use_right" style="margin-top:10px;">
+                         <view class="n_co_type" wx:if='{{item.coupon_type==1}}'>
+                            <text style='font-size:28rpx;'>￥</text>{{item.dis_price}}
+                          </view>
+                           <view class="n_co_type" wx:if='{{item.coupon_type==2}}'>
+                            {{item.dis_price}}<text style='font-size:28rpx;'>%</text>
+                          </view>
+                          <view class="n_co_type" wx:if='{{item.coupon_type==3}}'>
+                              免邮
+                          </view>
+                          
+                        <view class="price_type">
+                          立即使用
+                        </view>
+                  </view>
+              </view>
+          </view>
+      </block>
+    </view>      
+
+  <view class="no_coupon_style" wx:if="{{end_coupon==''}}">
+					<view style="text-align: center;margin-bottom:30rpx;">
+						  <image src="../../img/no_anyone.png"></image>
+					</view>
+          <view style='text-align:center;font-size:30rpx;'>
+					    暂无相关订单
+          </view>
+	</view>
+</block>
+
+
+<view class="footer_get_coupon">
+	<view id="get_coupon_view">
+        <view class="join_code">
+            <input type="text" name="coupon_code" class="promotion_code" placeholder="请输入优惠券领取码" bindinput='inputvalue'/>
+        </view>
+        <view class="active_button">
+            <view class="change_coupon" bindtap='get_coupon'>兑换优惠券</view>
+        </view>
+    </view>
+</view>
+
+
+
+

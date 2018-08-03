@@ -1,0 +1,15 @@
+<!--pages/order/order.wxml-->
+<import src="../../template/Merchants/merchants.wxml"/>
+<view class="search-head">
+    <view class="found-head-top">
+      <image class='icon_search'  src='../../img/icon_search.png'></image>
+      <input type="text" id="found-search" class="am-input-sm" placeholder="搜活动、搜场所、嗖嗖嗖" value=""/>
+    </view>
+</view>
+<view class="meachant-list">
+    <block  wx:for="{{posterList}}" wx:key="item" wx:index="index">
+        <view catchtap='onTabtoDetail' data-post-id='{{item.id}}'> 
+          <template is="merchants" data="{{...item}}" />
+        </view>
+    </block> 
+</view>

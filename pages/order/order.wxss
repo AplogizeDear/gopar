@@ -1,0 +1,48 @@
+/* pages/order/order.wxss */
+page{
+  background:#f7f8fa;
+}
+.n_co_top {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.n_co_top {
+    margin: 0;
+    padding: 0;
+    height: 84rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60rpx;
+    background: #fff;
+    z-index: 999;
+}
+.n_co_top view {
+    width: 106rpx;
+    height: 86rpx;
+    line-height: 86rpx;
+    text-align: center;
+}
+.selected{
+  color:#ed3269;
+   border-bottom:2px solid #ed3269;
+}
+.no_coupon_style{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 180px;
+    height: 225px;
+}
+.no_coupon_style  image {
+    width: 324rpx;
+    height: 333rpx;
+}
+.inner{
+  margin-bottom:0;
+}

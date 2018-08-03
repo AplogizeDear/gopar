@@ -1,0 +1,10 @@
+<!--pages/gonick/gonick.wxml-->
+<view class="n_mod_nick">
+    <input type="text" bindinput='getvalue' class="mod_nick" name="nickname" value="" placeholder="请输入你的新昵称"/>
+</view>
+
+<view class="n_go_buy">
+  <view class="n_go_buy_href pay_btn" bindtap="confirm_btn">
+     <view class="buy-ticket-href">确认</view>
+  </view>
+</view>

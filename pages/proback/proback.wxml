@@ -1,0 +1,47 @@
+<!--pages/proback/proback.wxml-->
+<view class="active-detail-title">
+    反馈类型
+</view>
+<view class="all_problem">
+    <view class="problem_list">
+        <block  wx:for="{{typeList}}" wx:key="item"> 
+               <view class="liview {{currentindex == index ? 'active_pro' : ''}}"  data-index='{{index}}' data-id="{{item.id}}"  bindtap='localindex'>{{item.feedback_name}}</view>         
+        </block>
+    </view>
+</view>
+<view class="active-detail-title">
+    联系方式
+</view>
+<view style="overflow: hidden;margin-bottom:30px;">
+    <input id="phone_class" type="number" maxlength='11' name="phone_mob" value="" placeholder="请输入你的手机号我们将尽快联系你" bindinput='mobileInput'/>
+</view>
+<view class="active-detail-title" style='margin-top:0rpx;'>
+    其他问题
+</view>
+<view class="mod_intro" style="margin-top:0;">
+    <textarea maxlength="100" name="content" class="per_mod_intro" placeholder="请输入你的意见和问题反馈..." bindinput='numbertext'></textarea>
+    <view class="mod_num">
+        <span>{{num}}</span> / 100
+    </view>
+</view>
+
+ <view class="put_img_con">
+	<view class="img_put" style="float: left;">
+    <image src="{{imgs}}" mode="aspectFill" bindtap="previewImg"></image>
+	</view>
+  <view class="upload-img-btn" bindtap="chooseImg"></view>
+</view> 
+
+<!-- 提交按钮 -->
+<view class="n_go_buy">
+  <view class="n_go_buy_href pay_btn" bindtap='submit'>
+  <view class="buy-ticket-href" data-id="{{item.id}}">提交</view>
+ </view>
+</view>
+
+
+
+
+
+
+

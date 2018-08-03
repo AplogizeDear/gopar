@@ -1,0 +1,32 @@
+<!--pages/addaddress/addaddress.wxml-->
+<form bindsubmit="confirm_btn">
+<view class='all_con'>
+  <view class='vlable'>
+      收货人<input type="text" name="nickname" id="consignee" placeholder="请输入真实姓名"/>
+  </view>
+  <view class="add-address-line"></view>
+  <view class='vlable'>
+      手机号<input type="text" name="phone" id="consignee" placeholder="请输入联系电话"/>
+  </view>
+  <view class='vlable'>
+      省份<input type="text" name="province" id="consignee" placeholder="请输入省份"/>
+  </view>
+  <view class='vlable'>
+      城市<input type="text" name="city" id="consignee" placeholder="请输入城市"/>
+  </view>
+  <view class='vlable'>
+      区<input type="text" name="area" id="consignee" placeholder="请输入区域或街道"/>
+  </view>
+  <view class="add-address-line"></view>
+  <view class='n_detail_address' >
+     <textarea minlength="4" style="font-weight:normal;"  placeholder="请输入收货的详细地址" name="address"></textarea>
+  </view>
+  <view class="add-address-line"></view>
+</view>
+
+<view class="n_go_buy">
+  <button class="n_go_buy_href pay_btn" formType="submit">
+     <view class="buy-ticket-href">确认添加</view>
+  </button>
+</view>
+</form>

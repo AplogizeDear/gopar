@@ -1,0 +1,107 @@
+/* pages/myaddress/myaddress.wxss */
+page {
+    padding-top: 54rpx;
+}
+.address-list{
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    margin-bottom: 64rpx;
+}
+.viewli{
+    width: 100%;
+    padding-top: 26rpx;
+    font-size: 36rpx;
+    margin-bottom: 48rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 4rpx 8rpx rgba(50,50,50,0);
+}
+.people-info-top {
+    padding: 0 60rpx;
+}
+.people-info-top .user-info {
+    margin: 0;
+    padding-bottom: 42rpx;
+}
+.user-info-name {
+    color: #554b4b;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+.user-info-mobile{
+    color: #554b4b;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+.people-info-top .address-info {
+    margin: 0 0 24rpx;
+    color: #727272;
+    font-size: 26rpx;
+}
+.people-info-bot {
+    padding: 0 60rpx;
+    height: 80rpx;
+}
+.people-info-left{
+    margin: 0;
+    float: left;
+    line-height: 40rpx;
+}
+.people-info-left image{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+    display: block;
+    float: left;
+    margin-top: 5rpx;
+}
+.people-info-right {
+    margin: 0;
+    float: right;
+    margin-right:10rpx;
+}
+.shanchu3{
+  float:right;
+  margin-right:10rpx;
+}
+.icon-icon-bainji{
+  float:right;
+  margin-right:10rpx;
+}
+/* pages/gonick/gonick.wxss */
+.n_mod_nick{
+  width:100%;
+}
+.mod_nick {
+    height: 100rpx;
+    background: #f7f8fa;
+    border: none;
+    outline: none;
+    margin:0 28rpx;
+    border-radius: 15rpx;
+    padding-left:26rpx;
+    margin-bottom: 35rpx;
+    margin-top:60rpx;
+}
+.n_go_buy {
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.n_go_buy_href {
+    width: 654rpx;
+    height: 100rpx;
+    background: -webkit-linear-gradient(30deg, #ed3367, #f05e3f);
+    box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+    border-radius: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size:32rpx;
+}
+
+

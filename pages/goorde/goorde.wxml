@@ -1,0 +1,108 @@
+<!--pages/goorde/goorde.wxml-->
+<view class="n_no_use_co">
+      <view class="wait_pay">
+          <view class="wait_top">
+              <view class='head_top'>
+                  订单编号 : {{order_detail.order_id}}
+              </view>
+              
+              <view class='head_bot' wx:if="{{order_detail.status==5}}">
+                    交易取消
+              </view>
+
+               <view class='head_bot' style='color:#ed3269;' wx:if="{{order_detail.status==1}}">
+                    待支付
+              </view>
+
+               <view class='head_bot' style='color:#ed3269;' wx:if="{{order_detail.status==2}}">
+                    已支付
+              </view>
+                    
+               <view class='head_bot' wx:if="{{order_detail.status==4}}">
+                    已退款
+              </view>
+
+          </view>
+
+          <view class="wait_mid">
+              <view class="inner">
+                  <view class="goods-list-inner" style="margin-left:0;margin-right:0;">
+                      <view class="goods-list-img">
+                        <image src="{{schedule_detail.img_Logo}}"></image>
+                      </view>
+                      <view class="goods-list-detail" style='width:400rpx;'> 
+                          <view class="goods-title">
+                            {{schedule_detail.title}}
+                          </view>
+
+                          <view class="goods-time">
+                              {{schedule_detail.start_time}}
+                          </view>
+
+                          <view class="goods-address">
+                              {{schedule_detail.address}}
+                          </view>
+                      </view>  
+                  </view> 
+              </view>  
+          </view>
+
+          <view class="wait_bot" style="border-bottom:1px solid #f0f0f0;">
+              <view class='wait_list'>
+                    <view class="le_le_le">
+                        <text style="color:#8c9aaf;">门票详情</text>
+                    </view>
+                    <view class="ri_ri_ri">
+                        <text>{{order_detail.ticket_name}}</text>
+                    </view>
+              </view>
+
+               <view class='wait_list'>
+                    <view class="le_le_le">
+                        <text>购买数量</text>
+                    </view>
+                    <view class="ri_ri_ri">
+                        <text> {{order_detail.quantity}}  张</text>
+                    </view>
+              </view>
+
+              <view class='wait_list'>
+                    <view class="le_le_le">
+                        <text>购买单价</text>
+                    </view>
+                    <view class="ri_ri_ri">
+                        <text>￥{{order_detail.ticket_price}}</text>
+                    </view>
+              </view>
+
+              <view class='wait_list'>
+                    <view class="le_le_le">
+                        <text>快递</text>
+                    </view>
+                    <view class="ri_ri_ri">
+                        <text>{{order_detail.express_price}}</text>
+                    </view>
+              </view>
+
+              <view class='wait_list'>
+                    <view class="le_le_le">
+                        <text>优惠</text>
+                    </view>
+                    <view class="ri_ri_ri">
+                        <text>- 0.00</text>
+                    </view>
+              </view>
+
+		       </view>
+
+            <view class="n_or_bot">
+                <view class="le_le_le">
+                     订单金额
+                </view>
+                <view class="ri_ri_ri">  
+                     <text style='font-size:30rpx;'>￥</text>{{order_detail.total_price}}
+                </view>
+            </view>
+        
+      </view>
+</view> 

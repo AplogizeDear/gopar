@@ -1,0 +1,92 @@
+/* pages/personal/personal.wxss */
+page{
+  background:#fff;
+}
+.n_per_head {
+    width: 682rpx;
+    height: 180rpx;
+    margin: 40rpx 32rpx 72rpx;
+    line-height: 180rpx;
+}
+.n_per_nickname {
+    font-size: 40rpx;
+    font-weight: 700;
+    color: #000;
+    margin-left: 10rpx;
+    float: left;
+}
+.per-head-center {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+}
+.person-editor {
+    background: #fff;
+    margin: 0 32rpx;
+}
+.person-editor .per-list{
+    height: 92rpx;
+    line-height: 92rpx;
+    margin-bottom:20rp;
+}
+.nickname{
+  float:left;
+  font-size:30rpx;
+}
+.iconyoujiantou{
+  float:right;
+  margin-top:26rpx;
+  font-size: 30rpx;
+  padding-left:20rpx;
+}
+.phonename{
+  float:right;
+  font-size:30rpx;
+
+}
+.phonename-name{
+  float:right;
+  width: 380rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.iconyoujiantou{
+  margin-top:0;
+}
+.polist{
+  overflow: hidden;
+  width:180rpx;
+  height:180rpx;
+  float:right;
+  position: relative;
+  border-radius: 50%;
+}
+.img{
+  overflow: hidden;
+  width:180rpx;
+  height:180rpx;
+  float: right;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.img image{
+  width:180rpx;
+  height:180rpx;
+  border-radius: 50%;
+  float: right;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.upload-img-btn{
+  width:180rpx;
+  height:180rpx;
+  position: absolute;
+  left:0;top:0;
+
+}
+@import "../../iconcss/iconcss.wxss";

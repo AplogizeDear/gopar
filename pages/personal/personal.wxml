@@ -1,0 +1,48 @@
+<!--pages/personal/personal.wxml-->
+<view class="per-all-content">
+    <view class="n_per_head">
+        <view class="n_per_nickname">
+            王仲毅            
+        </view>
+        <view class='polist'>
+          <view class="img">
+              <image src="{{imgs ? imgs:'../../img/header.jpg'}}" mode="aspectFill" bindtap="previewImg"></image>
+          </view>
+            <view class="upload-img-btn" bindtap="chooseImg"></view>
+         </view>
+    </view>
+</view>
+
+<!-- 个人资料编辑 -->
+<view class="person-editor">
+    <view class="per-list" bindtap='gonick'>
+        <view class='nickname'> 昵称 </view> 
+         <view class='icon iconyoujiantou'></view> 
+        <view class='phonename'>18435841974</view>   
+    </view>
+
+    <view class="per-list" bindtap='gophone'>
+        <view class='nickname'> 手机号 </view>
+        <view class='phonename' style='padding-right:44rpx;'>18435841974</view>   
+    </view>
+
+    <view class="per-list" bindtap='gosex'>
+        <view class='nickname'>性别 </view>
+         <view class='icon iconyoujiantou'></view> 
+        <view class='phonename'>男</view>   
+    </view>
+
+     <view class="per-list" bindtap='gopas'>
+        <view class='nickname'>密码 </view>
+         <view class='icon iconyoujiantou'></view> 
+        <view class='phonename'>******</view>   
+    </view>
+
+     <view class="per-list" bindtap='goper'>
+        <view class='nickname'>个人简介 </view>
+         <view class='icon iconyoujiantou'></view> 
+        <view class='phonename-name'>******发v所发生的事发的防守打法</view>   
+    </view>
+
+
+</view>

@@ -1,0 +1,23 @@
+<!--pages/changeaddress/changeaddress.wxml-->
+<form bindsubmit="confirm_btn">
+<view class='all_con'>
+  <view class='vlable'>
+      收货人<input type="text" name="nickname" id="consignee" placeholder="请输入真实姓名" value="{{consignee_name}}"/>
+  </view>
+  <view class="add-address-line"></view>
+  <view class='vlable'>
+      手机号<input type="text" name="phone" id="consignee" placeholder="请输入联系电话" value="{{consignee_phone_mob}}"/>
+  </view>
+  <view class="add-address-line"></view>
+  <view class='n_detail_address' >
+     <textarea minlength="4" style="font-weight:normal;"  value="{{consignee_address}}" placeholder="请输入收货的详细地址" name="address"></textarea>
+  </view>
+  <view class="add-address-line"></view>
+</view>
+
+<view class="n_go_buy">
+  <button class="n_go_buy_href pay_btn" formType="submit">
+     <view class="buy-ticket-href">保存</view>
+  </button>
+</view>
+</form>

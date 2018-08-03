@@ -1,0 +1,9 @@
+ <template name="merchants">
+    <view class="a_href" hover-class='none'>
+        <view class="poster-img">
+          <image src='{{img_banner}}'></image>
+        </view>
+    </view>
+    <view class="place-row-title">{{name}}</view>
+    <view class="place-text-row"><image src="../../img/icon_address.png"></image>{{content}}</view>
+</template> 

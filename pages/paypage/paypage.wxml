@@ -1,0 +1,132 @@
+<!--pages/paypage/paypage.wxml-->
+<view class="n_sc_sc">
+	<view class="n_sc_sc_all">
+		<view class="n_sc_title" style="padding-bottom:0;">
+			  {{schedule_detail.title}}
+		</view>
+	</view>
+</view>
+
+<view class="count-pay">
+
+		<view class="count-left">
+			<view class="count_left_notice">暂不支持退票</view>
+			<view class="count-left-text">
+          <view  class="total_price">￥{{total_price}}</view>
+      </view>
+		</view>
+				
+    <view class="count-right">
+        <view class="count-link" bindtap='immpay'>立即支付</view>
+    </view>
+  
+</view> 
+
+
+<view class="time_buy_type">
+      <view class="time_left_time">
+          <view class="the_time">
+              <view class="n_pay_title">
+                  时间
+              </view>
+
+              <view class="field-select">
+                 {{size_detail.ticket_date}}
+              </view>
+          </view>
+      </view>
+
+      <view class="buy_type_right">
+				<view class="the_time">
+					<view class="n_pay_title">
+				        票种
+					</view>
+					<view class="field-select">
+						<view class="field-active">{{size_detail.ticket_name}}</view>
+					</view>
+				</view>
+			</view>
+</view>
+
+
+<view class='all_con'>
+    <view class="the_time">
+          <view class="n_pay_title">
+                数量
+          </view>
+          
+          <view class="n_all_select">
+            <view class="n_ticket_type">
+                {{request_data.ticket_num}} 张
+            </view>
+          </view>
+    </view>
+
+
+    <view class="the_time">
+          <view class="n_pay_title">
+                取票方式
+          </view>
+          <!-- 电子票的情况 -->
+          <view class="dispatching-select">
+              <view class="ewm-select">
+                <view class="ewm-con" id="express_type">
+                  <view class="qr_code_num" style="overflow:hidden;">
+                    
+                    <view class="ex_ty_cla" style="background:#ed3269;">电子票</view>
+
+                    <view class="n_qr_code_img">
+                      <image src="../../img/qr_code.png"></image>
+                    </view>
+                  </view>
+                </view>
+              </view>
+				
+          <view class="dispatch-notice" style="padding:0.35rem 0;margin:0;">
+            <text style="color:#909090;">提示：请凭二维码或取票码短信到演出场地换票</text>
+          </view>
+			</view>
+    </view>
+
+
+    <view class="the_time">
+        <view class="n_pay_title">
+          <text>优惠券</text>
+        </view>
+        <view class="coupon-select" bindtap='gocoupon'>
+              <view class="coupon-left">
+                  优惠劵
+              </view>
+              <view class='icon iconyoujiantou'></view>
+              <view class="coupon-right">
+                    {{coupon_count}} 张可用
+              </view>  
+        </view>
+		</view>
+
+    <view class="the_time">
+			<view class="n_pay_title">
+				<text>支付方式</text>
+			</view>
+
+      <view class="weixin_pay">
+        <view class="wa_de_le">
+            <view class="wa_img">
+                <image src="../../img/c-pay-weixin.png" alt=""></image>
+            </view>
+            <text style='font-size:30rpx;'>微信支付</text>
+        </view>
+        <view class="wa_de_ri">
+            <view class="way_round">
+               <div class="way_inner selected">
+               </div>
+            </view>
+        </view>
+      </view>
+		</view> 
+
+    <view class="notice-know-buy">
+		<text class="notice">购买即表示我已阅读 <text style="color:#ed3269;">《 购票须知 》</text>
+    </text>
+	</view>
+</view>

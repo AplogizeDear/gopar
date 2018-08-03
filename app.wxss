@@ -1,0 +1,294 @@
+/*修改顶层节点的样式*/
+/* 引入icon */
+@import "./iconcss/iconcss.wxss";
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #fff;
+  font-size:26rpx;
+  float:left;
+}
+.slider {
+    display: block;
+    height: 400rpx;
+}
+.slider .slide-image{
+    width: 100%;
+    height: 100%;
+}
+.slider .default-slide-image{
+    width: 60rpx!important;
+    height: 60rpx!important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clearfix::after{
+    content: "";
+    display: table!important;
+    clear: both;
+}
+/* 登录页面公共样式 */
+/* pages/login/login.wxss */
+.n_login{
+  width: 640rpx;
+  overflow: hidden;
+  margin: 80rpx 54rpx;
+}
+.n_login .new-login {
+  height: 86rpx;
+  margin-bottom: 54rpx;
+}
+.new-login image{
+  width:322rpx;
+  height:86rpx;
+}
+.n_login_notice{
+  overflow: hidden;
+  margin-bottom: 70rpx;
+  font-size: 30rpx;
+}
+.n_login_notice text{
+  font-size: 30rpx;
+}
+.n_login_phone{
+  width: 100%;
+  height: 88rpx;
+  margin-bottom: 28rpx;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+n_login_all {
+    width: 100%;
+    height: 50rpx;
+}
+.n_login_p {
+    display: block;
+    float: left;
+    width: 130rpx;
+    line-height: 50rpx;
+    padding-left: 30rpx;
+}
+.n_login_all input {
+    border: none;
+    height: 100%;
+    width: 460rpx;
+    padding-left: 20rpx;
+    float: right;
+    background: #f5f5f5;
+}
+.n_login_btn{
+     width: 100%;
+    height: 90rpx;
+    background: #dad9e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    color: #fff;
+}
+.n_login_p image{
+  width:34rpx;
+  height:24rpx;
+  margin-top:8rpx;
+}
+/* 注册页面相关 */
+.n_verifycode {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom:40rpx;
+}
+.get-identify-code {
+    float: right;
+    height: 90rpx;
+    width: 200rpx;
+    background: #ed3269;
+    color: #fff;
+    font-size: 26rpx;
+    padding-top:8rpx;
+}
+.form_btn_color {
+    background: -webkit-linear-gradient(30deg, #ed3367, #f05e3f);
+}
+button[type=primary] {
+    background:#ed3367;
+}
+button[disabled][type=primary] {
+    background:gray;
+}
+.n_login_phone button.get-identify-code.button-hover{
+  background-color:none;
+}
+
+/* 顶层门票s */
+.ticket-detail-inner {
+    padding-top: 54rpx;
+    padding-bottom: 100rpx;
+    overflow: hidden;
+    background: #ffffff;
+}
+.inner{
+  width:100%;
+  overflow: hidden;
+  margin-bottom:40rpx;
+}
+.goods-list-inner {
+    margin: 0 40rpx;
+    overflow:hidden;
+}
+.goods-list-img{
+    width: 242rpx;
+    height: 320rpx;
+    float: left;
+    border-radius: 20rpx;
+}
+.goods-list-img image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20rpx;
+}
+.goods-list-detail {
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    margin-left: 36rpx;
+    width: 386rpx;
+    height: auto;
+    float: left;
+}
+ .goods-title{
+    font-size: 34rpx;
+    color: #000;
+    font-weight: 600;
+}
+.goods-time {
+    font-size:24rpx;
+    color: #99a5b8;
+    margin-top: 36rpx;
+    margin-bottom:8rpx;
+}
+.goods-address {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #99a5b8;
+}
+.goods-price {
+    color: #ed3269;
+    font-size: 38rpx;
+    font-weight: 700;
+    padding-top: 36rpx;
+}
+/* 顶层门票end */
+
+/* 订单详情页面 */
+.n_no_use_co{
+  margin-top: 112rpx; 
+  padding-bottom: 110rpx;
+  display: block;
+}
+.wait_pay {
+    padding-left:32rpx;
+    padding-right:32rpx;
+    margin: 0;
+    width: auto;
+    margin-bottom: 20rpx;
+    background: #fff;
+    overflow: hidden;
+}
+.wait_top {
+    height: 100rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f7f8fa;
+    box-sizing: border-box;
+}
+.head_top{
+  float:left;
+  height:100%;
+  line-height: 100rpx;
+  color: #99a5b8;
+  font-size: 28rpx;
+}
+.head_bot{
+  float:left;
+  height:100%;
+  line-height: 100rpx; 
+  margin-left:92rpx;
+  font-size: 32rpx;
+  color:#99a5b8;
+}
+.wait_mid{
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  padding:40rpx 0;
+}
+.wait_bot{
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+  border-top: 2rpx solid #f7f8fa;
+  box-sizing: border-box;
+}
+.order_detail{
+  float:left;
+  margin-left:300rpx;
+  color: #ed3269;
+  font-size: 32rpx;
+  padding: 10rpx 14rpx;
+  border: 1px solid #ed3269;
+  border-radius: 60rpx;
+  margin-top:16rpx;
+}
+
+/* 优惠劵和订单页面 */
+page{
+  background:#f7f8fa;
+}
+.n_co_top {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.n_co_top {
+    margin: 0;
+    padding: 0;
+    height: 84rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60rpx;
+    background: #fff;
+    z-index: 999;
+}
+.n_co_top view {
+    width: 106rpx;
+    height: 86rpx;
+    line-height: 86rpx;
+    text-align: center;
+}
+.selected{
+  color:#ed3269;
+   border-bottom:2px solid #ed3269;
+}
+.no_coupon_style{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 180px;
+    height: 225px;
+}
+.no_coupon_style  image {
+    width: 324rpx;
+    height: 333rpx;
+}
+.inner{
+  margin-bottom:0;
+}

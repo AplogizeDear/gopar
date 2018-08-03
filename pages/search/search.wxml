@@ -1,0 +1,45 @@
+<!--pages/search/search.wxml-->
+<view class='header'>
+    <view class="top-bar-w">
+        <view class="top-bar-c">
+            <view class="s-input-select">
+                <view class="s-input-frame">
+                      <view class="c-form-btn">
+								         <view class="icon icon-sousuo"></view>
+							        </view>
+
+                      <view class="s-form-search">
+								          <input type="search" focus:true name="keyword" class="J_autocomplete" placeholder="搜艺人" value="" bindinput='inputbtn'  />
+							        </view>
+					      </view>
+
+                 <view class="top-bar-btn" bindtap='searchbtn'>
+			    	          搜索
+		  	        </view>
+
+                <view class="top-bar-btn"  bindtap='cancalbtn'  style='margin:0;'>
+			              	取消
+		          	</view>
+                
+			    	</view>  
+			  </view>
+		</view>
+</view>
+
+<view class="suggest-container" id="suggest-container">
+		<view class='title'>音乐风格</view>
+		<view class="hotkey">
+			<view class="suggest-hotkey" id="user-suggest-hotkey" data-sugg-type="2">
+				<view>民谣</view>
+				<view>摇滚</view>
+				<view>电子</view>
+				<view>爵士</view>
+				<view>流行</view>
+				<view>唱作人</view>
+				<view>嘻哈(说唱)</view>
+				<view>金属</view>
+				<view>朋克</view>
+				<view>节奏布鲁斯</view>
+			</view>
+		</view>
+	</view>

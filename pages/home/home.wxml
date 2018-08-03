@@ -1,0 +1,27 @@
+<!-- 先放个轮播图进去 pages/home/home.wxml-->
+<import src="../../template/slider/slider.wxml"/>
+<import src="../../template/productItem/product-item.wxml"/>
+
+<view class="slider-container">
+    <template is="slider" data="{{slider}}"/>
+    <image class='search_png' bindtap='showbtn'  src='../../img/icon_search_white.png'></image>
+</view>
+
+<!-- 商品(商品列表)-->
+<view class="pro-list">
+     <block  wx:for="{{schedule}}" wx:key="item" wx:index="idx"> 
+        <view catchtap='onTabtoDetail' data-post-id='{{item.id}}'>
+          <template is="productItem" data="{{...item}}" />
+        </view>
+     </block> 
+</view>
+
+<view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view>
+
+
+
+
+
+
+
+

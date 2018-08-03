@@ -1,0 +1,130 @@
+.n_per_con{
+    position: relative;
+    width: 100%;
+}
+.user_n_bg {
+    overflow: hidden;
+    width: 100%;
+    height: 590rpx;
+    margin-bottom: 354rpx;
+}
+.user_n_bg image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.n_per_con .n_per_introduce {
+    position: absolute;
+    left: 0;
+    top: 408rpx;
+    margin: 0 48rpx;
+    width: 654rpx;
+    height:440rpx;
+    padding-bottom: 60rpx;
+    border-radius: 20rpx;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 10rpx 5rpx rgba(0,0,0,0.3);
+}
+.n_user_img {
+    position: absolute;
+    left: 44rpx;
+    top: -86rpx;
+    width: 208rpx;
+    height: 208rpx;
+    border: 10rpx solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    z-index: 107;
+}
+.n_user_img image{
+  width:200rpx;
+  height:200rpx;
+  border-radius: 50%;
+  margin-left:4rpx;
+  margin-top:4rpx;
+}
+.n_user_de {
+    position: absolute;
+    right: 0;
+    width: 502rpx;
+    height: 114rpx;
+    padding-top: 20rpx;
+    padding-left: 150rpx;
+    background: transparent;
+    z-index: 101;
+}
+.n_user_name {
+    font-size: 28rpx;
+    font-weight: 700;
+    margin-bottom: 14rpx;
+    padding-left:140rpx;
+}
+.n_user_grand{
+  color: #7f8fa6;
+  padding-left:140rpx;
+  font-size: 28rpx;
+}
+.n_per_sign {
+    margin: 186rpx 44rpx 70rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 26rpx;
+}
+.n_per_href {
+    width: 100%;
+    height: 114rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.men_piao, .you_hui_juan {
+    width: 100rpx;
+    height: 100%;
+    text-align: center;
+}
+.men_img, .you_hui_juan_img {
+    text-align: center;
+}
+.men_piao image {
+    width: 80rpx;
+    height: 56rpx;
+    margin-left: 10rpx;
+    margin-bottom: 20rpx;
+}
+.you_hui_juan image {
+    width: 80rpx;
+    height: 56rpx;
+    margin-right: 6rpx;
+    margin-bottom: 15rpx;
+}
+.user_info {
+    padding: 0;
+    margin: 0;
+    padding-left:44rpx;
+    padding-right:44rpx;
+}
+.info-list{
+  overflow: hidden;
+  margin-bottom:30rpx;
+  padding-top:20rpx;
+  padding-bottom: 20rpx;
+}
+.pertitle{
+  float: left;
+  font-size:28rpx;
+}
+.icon-youjiantou{
+  float: right;
+  font-size:28rpx;
+}
+.phone{
+  float: right;
+  font-size: 28rpx;
+}
+.iconyoujiantou{
+  float:right;
+}
+@import "../../iconcss/iconcss.wxss";

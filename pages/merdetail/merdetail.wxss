@@ -1,0 +1,63 @@
+/* pages/merdetail/merdetail.wxss */
+.found_detail_head {
+    width: 750rpx;
+    height: 360rpx;
+}
+.found_detail_head image{
+  width:750rpx;
+  height:360rpx;
+}
+n_tab_con {
+    width: 750rpx;
+    overflow: hidden;
+}
+.n_bar_detail {
+    padding: 46rpx 44rpx;
+}
+.bar_title {
+    font-size: 44rpx;
+    margin-bottom: 50rpx;
+    color: #353b48;
+}
+.n_bar_detail .bar_time {
+    margin-bottom: 24rpx;
+    line-height: 38rpx;
+    color: #353b48;
+}
+.n_bar_detail .bar_address {
+    margin-bottom: 24rpx;
+    line-height: 38rpx;
+    color: #353b48;
+}
+.icon_time image{
+    width: 38rpx;
+    height: 38rpx;
+    float: left;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 22rpx;
+}
+.icon_address image{
+    width: 38rpx;
+    height: 38rpx;
+    float: left;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 22rpx;
+}
+.icon_phone image{
+    width: 38rpx;
+    height: 38rpx;
+    float: left;
+    background: #fff;
+    margin-right: 22rpx;
+}
+/* 商品列表 */
+.pro-list{
+  width:700rpx;
+  margin:0 25rpx;
+  margin-top:40rpx;
+  overflow: hidden;
+  margin-bottom:40rpx;
+}
+@import "../../template/productItem/product-item.wxss";

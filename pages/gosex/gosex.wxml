@@ -1,0 +1,30 @@
+<!--pages/gosex/gosex.wxml-->
+<view class="all">
+
+    <!-- <view class="n_mod_man">
+				男<image src="../../img/icon_dui2.png"></image>
+		</view>
+	
+    <view class="n_mod_man" style="margin-top:0;">
+				女<image src=""></image>
+		</view> -->
+     <block wx:for="{{model}}" wx:key="sex">
+             <view class="n_mod_man" bindtap="selectClick" id="{{index}}" data-sex="{{item.sex}}">
+                 <view class="middle-title">
+                 	<view>{{item.sex}}</view>
+                  </view>
+                  <view  class="sex-right" wx:if="{{item.selectImage==false}}">
+                    <image src="../../img/icon_dui2.png"></image>
+                  </view>
+            </view>
+      </block>
+
+</view>
+
+
+
+<view class="n_go_buy">
+  <view class="n_go_buy_href pay_btn" bindtap="confirm_btn">
+     <view class="buy-ticket-href">确认</view>
+  </view>
+</view>

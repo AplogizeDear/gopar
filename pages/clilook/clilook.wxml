@@ -1,0 +1,40 @@
+<!--pages/clilook/clilook.wxml-->
+<view class='ticket-detail-inner'>
+    <view class="schedule_pop">
+        <view class="inner">
+            <view class="goods-list-inner">
+               <view class="goods-list-img">
+                  <image src="http://go-par.com//uploads/schedule/old_schedule/320.jpg"></image>
+              </view>
+               <view class="goods-list-detail">
+                  <view class="goods-title" style="color:#ef497a;padding-top: 26rpx;padding-bottom: 72rpx;">
+                    {{goods}}
+                  </view>
+
+                  <view class="goods-address">
+                      {{express_company}} : {{express_number}}
+                  </view>
+
+                   <view class="goods-price" style='color:#787375;font-size:26rpx;'>
+                      官方电话 : {{express_tel}}
+                  </view>   
+              </view>  
+					</view> 
+        </view>
+    </view>
+</view>
+
+<view class="n_log_list">
+    <block wx:for='{{list}}' wx:key='index'>
+		  <view class="n_log" data-index="{{index}}">
+        <image src="{{index==0 ? '../../img/icon_shang1.png':'../../img/icon_shang.png'}}" data-index="{{index}}"></image>
+        <view class="log_le" data-index="{{index}}">
+          <view class="n_log_time" data-index="{{index}}">{{item.time}}</view>
+        </view>
+        <view class="log_ri" data-index="{{index}}">
+          <view class="log_ri_con" data-index="{{index}}">
+            {{item.status}}</view>
+        </view>
+      </view>
+    </block>	
+</view>

@@ -1,0 +1,66 @@
+<view class="n_per_con">
+    <view class="user_n_bg">
+        <image src="{{bgpic}}" mode="aspectFill" bindtap='choosePic'></image>
+    </view>
+
+    <view class="n_per_introduce">
+      <view class="n_user_img"  bindtap='personal'>
+          <image src='../../img/header.jpg'></image>           
+      </view>
+          
+      <view class="n_user_de">
+          <view class="n_user_name">王仲毅</view>
+          <view class="n_user_grand">普通会员</view>
+      </view>
+      
+      <view class="n_per_sign">
+          未填写个人简介
+      </view>
+
+      <view class="n_per_href">
+        <view class="men_piao" bindtap='ticket_href'>
+            <view class="men_img">
+                <image src="../../img/icon_menpiao.png" alt=""></image>
+            </view>
+            <view style="font-size: 30rpx;color:#000;">门票</view>
+        </view>
+
+        <view class="men_piao">
+            <view class="men_img" bindtap='order_href'>
+                <image src="../../img/icon_order.png" alt=""></image>
+            </view>
+            <view style="font-size: 30rpx;color:#000;">订单</view>
+        </view>
+
+        <view class="you_hui_juan">
+            <view class="you_hui_juan_img" bindtap='coupon_href'>
+                <image src="../../img/icon_coupon.png" alt=""></image>
+            </view>
+            <view style="font-size: 30rpx;color:#000;">优惠劵</view>
+        </view>
+    </view> 
+  </view>
+
+  <view class="user_info">
+       <view class='info-list' bindtap='personal'>
+          <text class='pertitle'>个人资料</text>
+          <view class='icon iconyoujiantou'></view>
+      </view>
+
+      <view class='info-list' bindtap='myaddress'>
+          <text class='pertitle'>我的地址</text>
+          <view class='icon iconyoujiantou'></view>
+      </view>
+
+      <view class='info-list'>
+          <text class='pertitle'>客服电话</text>
+          <view class='phone'>0571-56606065</view>
+      </view>
+
+      <view class='info-list' bindtap='proback'>
+          <text class='pertitle'>问题反馈</text>
+          <view class='icon iconyoujiantou'></view>
+      </view>
+  </view>
+</view>
+

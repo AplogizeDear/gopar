@@ -1,0 +1,216 @@
+/* pages/paypage/paypage.wxss */
+page{
+  background:#fff;
+}
+.n_sc_sc .n_sc_sc_all {
+    margin: 0 24rpx;
+    padding-top: 54rpx;
+    padding-bottom: 50rpx;
+}
+.n_sc_sc_all .n_sc_title{
+    font-size: 44rpx;
+    font-weight: 700;
+}
+.count-pay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140rpx;
+    background-color: #fff;
+    z-index: 96;
+    line-height: 140rpx;
+    box-shadow: 0 -4rpx 70rpx 0 rgba(0,0,0,0.1);
+}
+.count-left {
+    float: left;
+}
+.count-left .count_left_notice {
+    margin-left: 48rpx;
+    margin-right: 30rpx;
+    float: left;
+    color: #929292;
+    font-size: 24rpx;
+}
+.count-left .count-left-text {
+    position: relative;
+    text-align: center;
+    float: left;
+    height: 140rpx;
+    width:auto;
+}
+.count-pay .count-right {
+    text-align: center;
+    width: 260rpx;
+    color: #fff;
+    height: 100%;
+    float: right;
+    background: #ffffff;
+    line-height: 112rpx;
+}
+.count-link {
+    margin-top: 32rpx;
+    display: block;
+    width: 90%;
+    height: 84rpx;
+    background: -webkit-linear-gradient(30deg, #ed3367, #f05e3f);
+    border-radius: 60rpx;
+    text-align: center;
+    line-height: 84rpx;
+    color: #fff;
+    font-size: 38rpx;
+    font-weight: 700;
+    box-shadow: 0 14rpx 28rpx rgba(0,0,0,0.4);
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.total_price {
+    position: absolute;
+    top: 0rpx;
+    font-size: 44rpx;
+    font-weight: bolder;
+    color: #ed3269;
+    text-align: center;
+    z-index: 1000;
+}
+
+.time_buy_type {
+    height: 160rpx;
+    margin:0 24rpx;
+    margin-bottom: 60rpx;
+}
+.time_left_time {
+    float: left;
+    margin-right: 110rpx;
+}
+.n_pay_title{
+  margin-bottom:28rpx; 
+}
+.n_all_select{
+    color: #ed3269;
+    font-size: 28rpx;
+    font-family: m-light;
+}
+.field-select{
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 0  26rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    border-radius: 60rpx;
+    background: #f7f8fa;
+    white-space: nowrap;
+    font-size: 28rpx;
+    margin-right: 26rpx;
+    margin-bottom: 20rpx;
+    background: #ed3269;
+    color: #fff;
+}
+.all_con{
+  padding: 0  26rpx
+}
+.the_time{
+  overflow: hidden;
+  padding-bottom: 56rpx;
+}
+.dispatching-select .ewm-select {
+    overflow: hidden;
+    height: 64rpx;
+    line-height: 64rpx;
+    margin-bottom:20rpx;
+}
+.ewm-select .ex_ty_cla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140rpx;
+    height: 64rpx;
+    background: #ed3269;
+    color: #fff;
+    float: left;
+    border-radius: 60rpx;
+}
+.n_qr_code_img {
+    overflow: hidden;
+    float: right;
+    width: 64rpx;
+    height: 64rpx;
+}
+.n_qr_code_img image{
+  width:64rpx;
+  height:64rpx;
+}
+.coupon-select{
+    background: none;
+    border-radius: 0;
+    height: 68rpx;
+    line-height: 68rpx;
+    color: #1d1d1d;
+}
+.coupon-left {
+    color: #555;
+    float: left;
+}
+.iconyoujiantou{
+  float:right;
+}
+.coupon-right {
+    float: right;
+    color:#ed3269;
+    padding-right:20rpx;
+}
+.weixin_pay{
+  overflow: hidden;
+}
+.wa_de_ri{
+  overflow: hidden;
+}
+.pay_way .way_detail li {
+    margin-bottom: 20rpx;
+    overflow: hidden;
+}
+.wa_de_le {
+    width: 90%;
+    line-height: 70rpx;
+    float: left;
+}
+.wa_de_le .wa_img {
+    float: left;
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 20rpx;
+}
+.wa_img image{
+   float: left;
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 20rpx;
+}
+.wa_de_ri {
+    width: 10%;
+    height: 70rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.way_round {
+    width: 44rpx;
+    height: 44rpx;
+    border: 2rpx solid #c3afaf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.way_round .selected {
+    width: 20px;
+    height: 20px;
+    background: #ed3269;
+    border-radius: 50%;
+    border: none;
+}
+.notice-know-buy {
+    padding-bottom: 160rpx;
+}

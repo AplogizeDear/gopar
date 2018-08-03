@@ -1,0 +1,39 @@
+<!--pages/myaddress/myaddress.wxml-->
+<view class="manage-address">
+  <block wx:for='{{list}}' wx:key='index'>
+		<view class="address-list" data-index="{{index}}">
+        <view class='viewli' data-index="{{index}}">
+						<view class="people-info-top" data-index="{{index}}">
+										<view class="user-info" data-index="{{index}}">
+											<text class="user-info-name" data-index="{{index}}" style="margin-right:30rpx;">{{item.consignee}}</text>
+											<text class="user-info-mobile" data-index="{{index}}">{{item.mobile}}</text>
+										</view>
+										<view class="address-info" data-index="{{index}}">
+											{{item.province}}{{item.city}}{{item.area}}{{item.address}}					
+                    </view>
+						</view>					
+				</view>
+        <view class="people-info-bot">
+            <view class="people-info-left" bindtap='setdefalut'>
+									<image src='../../img/icon_no_de.png'></image> 设为默认
+						</view>
+
+            <view class="people-info-right" bindtap='deletebtn' data-index="{{index}}" data-id="{{item.id}}" >
+                <view style='float:right;' data-id="{{item.id}}">删除</view>
+                <view class="icon shanchu3" data-id="{{item.id}}" style="color:#ed3269;"></view>  
+						</view>
+
+            <view class="people-info-right" bindtap='editoradd' data-index="{{index}}">
+                <view style='float:right;'>编辑</view>
+                <view class="icon icon-icon-bainji" style="color:#ed3269;"></view>  
+						</view>
+				</view>
+		</view>
+  </block>	
+</view>
+
+<view class="n_go_buy">
+  <view class="n_go_buy_href pay_btn" bindtap="confirm_btn">
+     <view class="buy-ticket-href">添加收货地址</view>
+  </view>
+</view>

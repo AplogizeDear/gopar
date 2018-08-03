@@ -1,0 +1,76 @@
+/* pages/changeaddress/changeaddress.wxss */
+.all_con{
+  display:block;
+  padding: 0 10%;
+  margin-top: 142rpx;
+}
+.vlable {
+    display: block;
+    padding: 20rpx 0;
+    height: 60rpx;
+    line-height: 60rpx;
+    overflow: hidden;
+    font-size: 30rpx;
+}
+.vlable input {
+    background: none;
+    border: none;
+    float: right;
+    font-size: 30rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #000;
+    outline: none;
+}
+.add-address-line {
+    margin:10rpx 0;
+    height: 4rpx;
+    background: #eee;
+}
+.n_detail_address{
+  height:200rpx;
+}
+.n_detail_address textarea {
+    font-size: 30rpx;
+    border: none;
+    /* padding: 32rpx 20rpx; */
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding:40rpx 0;
+}
+.n_mod_nick{
+  width:100%;
+}
+.mod_nick {
+    height: 100rpx;
+    background: #f7f8fa;
+    border: none;
+    outline: none;
+    margin:0 28rpx;
+    border-radius: 15rpx;
+    padding-left:26rpx;
+    margin-bottom: 35rpx;
+    margin-top:60rpx;
+}
+.n_go_buy {
+    margin-top:64rpx;
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.n_go_buy_href {
+    width: 654rpx;
+    height: 100rpx;
+    background: -webkit-linear-gradient(30deg, #ed3367, #f05e3f);
+    box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+    border-radius: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size:32rpx;
+}

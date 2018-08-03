@@ -1,0 +1,13 @@
+<!--pages/goper/goper.wxml-->
+<view class="mod_intro">
+    <textarea type="text" maxlength="100" class="per_mod_intro" name="user_profile" value="" placeholder="请填写个人简介" bindinput='numbertext'></textarea>
+    <view class="mod_num">
+        <text>{{num}}</text> / 100
+    </view>
+</view>
+
+<view class="n_go_buy">
+  <view class="n_go_buy_href pay_btn" bindtap="confirm_btn">
+     <view class="buy-ticket-href">确认</view>
+  </view>
+</view>

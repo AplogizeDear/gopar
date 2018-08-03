@@ -1,0 +1,229 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx9777d1571721be5b",
+	"projectname": "understand",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 31,
+			"list": [
+				{
+					"id": -1,
+					"name": "登录页面倒计时",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册页面",
+					"pathName": "pages/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "忘记密码页面",
+					"pathName": "pages/forpas/forpas",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "门票页面",
+					"pathName": "pages/ticket/ticket",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "门票详情页面",
+					"pathName": "pages/ticdet/ticdet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "物流详情页面",
+					"pathName": "pages/clilook/clilook",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的页面",
+					"pathName": "pages/mypage/mypage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单页面",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单页面",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单详情页面",
+					"pathName": "pages/goorde/goorde",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "优惠劵页面",
+					"pathName": "pages/coupon/coupon",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人资料",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人资料 昵称修改",
+					"pathName": "pages/gonick/gonick",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/paypage/paypage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索页面",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": 15,
+					"name": "详情页面",
+					"pathName": "pages/detail/detail",
+					"query": "postid=467"
+				},
+				{
+					"id": -1,
+					"name": "地址页面",
+					"pathName": "pages/myaddress/myaddress",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址编辑页面",
+					"pathName": "pages/editad/editad",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加收货地址页面",
+					"pathName": "pages/addaddress/addaddress",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "问题反馈页面",
+					"pathName": "pages/proback/proback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "密码修改",
+					"pathName": "pages/gopas/gopas",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人简介修改",
+					"pathName": "pages/goper/goper",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "性别切换",
+					"pathName": "pages/gosex/gosex",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现页面",
+					"pathName": "pages/found/found",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现页面",
+					"pathName": "pages/merdetail/merdetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "详情页面",
+					"pathName": "pages/merdetail/merdetail",
+					"query": "id=139"
+				},
+				{
+					"id": -1,
+					"name": "个人资料页面",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "门票",
+					"pathName": "pages/ticdet/ticdet",
+					"query": "id=986"
+				},
+				{
+					"id": -1,
+					"name": "问题反馈",
+					"pathName": "pages/proback/proback",
+					"query": ""
+				},
+				{
+					"id": 30,
+					"name": "详情页面",
+					"pathName": "pages/detail/detail",
+					"query": "postid=467"
+				},
+				{
+					"id": -1,
+					"name": "denglu ",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "授权页面",
+					"pathName": "pages/author/author"
+				}
+			]
+		}
+	}
+}

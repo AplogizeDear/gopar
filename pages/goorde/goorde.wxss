@@ -1,0 +1,43 @@
+/* pages/goorde/goorde.wxss */
+.inner{
+  margin-bottom:0;
+}
+.n_no_use_co{
+  margin-top:0;
+}
+.head_bot {
+  float:right;
+  margin-left:0;
+  padding-right:0;
+}
+.goods-title {
+  margin-bottom:108rpx;
+}
+.wait_bot {height:auto;}
+.wait_bot view {
+    overflow: hidden;
+    padding: 10rpx 0;
+}
+.wait_bot .wait_list .le_le_le {
+    float: left;
+    font-size: 28rpx;
+    color: #333;
+}
+.wait_bot .wait_list .ri_ri_ri {
+    float: right;
+    font-size: 28rpx;
+}
+.wait_pay {width:auto;}
+.n_or_bot {
+    overflow: hidden;
+    padding: 40rpx 0;
+}
+.n_or_bot .le_le_le {
+    float: left;
+    font-size: 32rpx;
+}
+.n_or_bot .ri_ri_ri {
+    float: right;
+    color: #ed3269;
+    font-size: 36rpx;
+}

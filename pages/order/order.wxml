@@ -1,0 +1,225 @@
+<!--pages/order/order.wxml-->
+ <view class="n_co_top">
+  <block wx:for="{{selectlist}}" wx:key="item">
+    <view class="{{currentTabsIndex == index?'selected':''}}" bindtap='select' data-index="{{index}}">
+        {{item.name}}
+    </view>
+  </block>
+</view>
+<!-- 全部的订单 -->
+<block wx:if='{{currentTabsIndex==0}}'>
+<view class="n_no_use_co">
+  <block wx:for="{{all_order_list}}" wx:key='item'>
+      <view class="wait_pay">
+          <view class="wait_top">
+              <view class='head_top'>
+                  订单编号 : {{item.order_id}}
+              </view>
+              
+              <view class='head_bot' wx:if="{{item.status==5}}">
+                    交易取消
+              </view>
+
+               <view class='head_bot' style='color:#ed3269;' wx:if="{{item.status==1}}">
+                    待支付
+              </view>
+
+               <view class='head_bot' style='color:#ed3269;' wx:if="{{item.status==2}}">
+                    已支付
+              </view>
+                    
+               <view class='head_bot' wx:if="{{item.status==4}}">
+                    已退款
+              </view>
+
+          </view>
+
+          <view class="wait_mid">
+              <view class="inner">
+                  <view class="goods-list-inner" style="margin-left:0;margin-right:0;">
+                      <view class="goods-list-img">
+                        <image src="{{item.img_logo}}"></image>
+                      </view>
+                      <view class="goods-list-detail" style='width:400rpx;'> 
+                          <view class="goods-title">
+                            {{item.title}}
+                          </view>
+
+                          <view class="goods-time">
+                              {{item.add_time}}
+                          </view>
+
+                          <view class="goods-address">
+                              {{item.address}}
+                          </view>
+
+                          <view class="goods-price" style="color:#353b48;font-size:28rpx;font-weight:400;">
+                              {{item.ticket_name}} {{item.quantity}} 张
+                          </view>   
+                      </view>  
+                  </view> 
+              </view>  
+          </view>
+
+          <view class="wait_bot">
+              <view style="float:left;height:100%;line-height: 100rpx;">
+                金额:<text style="font-size:36rpx;font-family:d-din;color:#ed3269;"> ￥{{item.ticket_price}}</text>
+              </view>
+              
+              <view class='order_detail' data-id="{{item.id}}" bindtap='goorde'>
+                    订单详情							
+              </view>
+          </view>
+      </view>
+  </block>
+</view> 
+</block>
+<!-- 待支付的订单 -->
+<block wx:if='{{currentTabsIndex==1}}'>
+    <view class="n_no_use_co">
+      <block wx:for='{{pl}}' wx:key='item'>
+          <view class="wait_pay">
+              <view class="wait_top">
+                  <view class='head_top'>
+                      订单编号 : {{item.order_id}}
+                  </view>
+                  
+                  <view class='head_bot' wx:if="{{item.status==5}}">
+                        交易取消
+                  </view>
+
+                  <view class='head_bot' style='color:#ed3269;' wx:if="{{item.status==1}}">
+                        待支付
+                  </view>
+
+                  <view class='head_bot' style='color:#ed3269;' wx:if="{{item.status==2}}">
+                        已支付
+                  </view>
+                        
+                  <view class='head_bot' wx:if="{{item.status==4}}">
+                        已退款
+                  </view>
+
+              </view>
+
+              <view class="wait_mid">
+                  <view class="inner">
+                      <view class="goods-list-inner" style="margin-left:0;margin-right:0;">
+                          <view class="goods-list-img">
+                            <image src="{{item.img_logo}}"></image>
+                          </view>
+                          <view class="goods-list-detail" style='width:400rpx;'> 
+                              <view class="goods-title">
+                                {{item.title}}
+                              </view>
+
+                              <view class="goods-time">
+                                  {{item.add_time}}
+                              </view>
+
+                              <view class="goods-address">
+                                  {{item.address}}
+                              </view>
+
+                              <view class="goods-price" style="color:#353b48;font-size:28rpx;font-weight:400;">
+                                {{item.ticket_name}} {{item.quantity}} 张
+                              </view>   
+                          </view>  
+                      </view> 
+                  </view>  
+              </view>
+
+              <view class="wait_bot">
+                  <view style="float:left;height:100%;line-height: 100rpx;">
+                    金额:<text style="font-size:36rpx;font-family:d-din;color:#ed3269;"> ￥{{item.ticket_price}}</text>
+                  </view>
+                  
+                  <view class='order_detail' bindtap='goorde'>
+                        订单详情							
+                  </view>
+              </view>
+          </view>
+      </block>
+    </view> 
+</block>
+
+<!-- 已支付的订单 -->
+<block wx:if='{{currentTabsIndex==2}}'>
+    <view class="n_no_use_co" wx:if='{{ul.length}}'>
+        <block wx:for='{{ul}}' wx:key='item'>
+            <view class="wait_pay">
+                <view class="wait_top">
+                    <view class='head_top'>
+                        订单编号 : {{item.order_id}}
+                    </view>
+                    
+                    <view class='head_bot' wx:if="{{item.status==5}}">
+                          交易取消
+                    </view>
+
+                    <view class='head_bot' style='color:#ed3269;' wx:if="{{item.status==1}}">
+                          待支付
+                    </view>
+
+                    <view class='head_bot' style='color:#ed3269;' wx:if="{{item.status==2}}">
+                          已支付
+                    </view>
+                          
+                    <view class='head_bot' wx:if="{{item.status==4}}">
+                          已退款
+                    </view>
+
+                </view>
+
+                <view class="wait_mid">
+                    <view class="inner">
+                        <view class="goods-list-inner" style="margin-left:0;margin-right:0;">
+                            <view class="goods-list-img">
+                              <image src="{{item.img_logo}}"></image>
+                            </view>
+                            <view class="goods-list-detail" style='width:400rpx;'> 
+                                <view class="goods-title">
+                                  {{item.title}}
+                                </view>
+
+                                <view class="goods-time">
+                                    {{item.add_time}}
+                                </view>
+
+                                <view class="goods-address">
+                                    {{item.address}}
+                                </view>
+
+                                <view class="goods-price" style="color:#353b48;font-size:28rpx;font-weight:400;">
+                                  {{item.ticket_name}} {{item.quantity}} 张
+                                </view>   
+                            </view>  
+                        </view> 
+                    </view>  
+                </view>
+
+                <view class="wait_bot">
+                    <view style="float:left;height:100%;line-height: 100rpx;">
+                      金额:<text style="font-size:36rpx;font-family:d-din;color:#ed3269;">￥{{item.ticket_price}}</text>
+                    </view>
+                    
+                    <view class='order_detail' bindtap='goorde'>
+                          订单详情							
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view> 
+
+    <view class="no_coupon_style">
+            <view style="text-align: center;margin-bottom:30rpx;">
+                <image src="../../img/no_anyone.png"></image>
+            </view>
+            <view style='text-align:center;font-size:30rpx;'>
+                暂无相关订单
+            </view>
+    </view>
+</block>
+
+
+
